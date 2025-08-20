@@ -1,0 +1,18 @@
+mysql> CREATE TABLE job (
+    ->     job_id VARCHAR(255),
+    ->     job_title VARCHAR(255) DEFAULT '',
+    ->     min_salary INT DEFAULT 8000,
+    ->     max_salary INT DEFAULT NULL
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc job;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| job_id     | varchar(255) | YES  |     | NULL    |       |
+| job_title  | varchar(255) | YES  |     |         |       |
+| min_salary | int          | YES  |     | 8000    |       |
+| max_salary | int          | YES  |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)

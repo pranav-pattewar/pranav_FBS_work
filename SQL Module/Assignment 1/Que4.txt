@@ -1,0 +1,25 @@
+ CREATE TABLE job_histry (    employee_id INT,    start_date DATE,    end_date DATE,    job_id VARCHAR(255),    department_id INT);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> show tables
+    -> ;
++-----------------------+
+| Tables_in_assignment1 |
++-----------------------+
+| countries             |
+| job_histry            |
+| jobs                  |
++-----------------------+
+3 rows in set (0.02 sec)
+
+mysql> desc job_histry;
++---------------+--------------+------+-----+---------+-------+
+| Field         | Type         | Null | Key | Default | Extra |
++---------------+--------------+------+-----+---------+-------+
+| employee_id   | int          | YES  |     | NULL    |       |
+| start_date    | date         | YES  |     | NULL    |       |
+| end_date      | date         | YES  |     | NULL    |       |
+| job_id        | varchar(255) | YES  |     | NULL    |       |
+| department_id | int          | YES  |     | NULL    |       |
++---------------+--------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)

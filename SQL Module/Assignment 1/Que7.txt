@@ -1,0 +1,18 @@
+mysql> CREATE TABLE Department (
+    ->     DEPARTMENT_ID DECIMAL(4,0) NOT NULL PRIMARY KEY,
+    ->     DEPARTMENT_NAME VARCHAR(30) NOT NULL,
+    ->     MANAGER_ID DECIMAL(6,0) NOT NULL,
+    ->     LOCATION_ID DECIMAL(4,0)
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc Department ;
++-----------------+--------------+------+-----+---------+-------+
+| Field           | Type         | Null | Key | Default | Extra |
++-----------------+--------------+------+-----+---------+-------+
+| DEPARTMENT_ID   | decimal(4,0) | NO   | PRI | NULL    |       |
+| DEPARTMENT_NAME | varchar(30)  | NO   |     | NULL    |       |
+| MANAGER_ID      | decimal(6,0) | NO   |     | NULL    |       |
+| LOCATION_ID     | decimal(4,0) | YES  |     | NULL    |       |
++-----------------+--------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)

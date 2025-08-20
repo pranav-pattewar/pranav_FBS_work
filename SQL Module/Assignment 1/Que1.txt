@@ -1,0 +1,19 @@
+mysql> show databases ;
++--------------------+
+| Database           |
++--------------------+
+| assignment1        |
+| firstdb            |
+| hotel_management   |
+| information_schema |
+| mysql              |
+| performance_schema |
+| practicedb         |
+| pranav             |
+| sakila             |
+| startersql         |
+| sys                |
+| test_db            |
+| world              |
++--------------------+
+13 rows in set (0.01 sec)

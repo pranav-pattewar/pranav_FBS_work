@@ -1,0 +1,17 @@
+mysql> create table jobs(
+    -> job_id int primary key,
+    -> job_title varchar(20) not null,
+    -> min_salary int, max_salary int check(max_salary<25000)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc jobs;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| job_id     | int         | NO   | PRI | NULL    |       |
+| job_title  | varchar(20) | NO   |     | NULL    |       |
+| min_salary | int         | YES  |     | NULL    |       |
+| max_salary | int         | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
