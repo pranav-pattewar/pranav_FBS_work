@@ -1,0 +1,13 @@
+mysql> delete from books
+    -> where category not in ('RDBMS', 'database');
+Query OK, 2 rows affected (0.01 sec)
+
+mysql> select * from books;
++---------+---------------------+-------------+--------+----------+
+| book_no | book_name           | author_name | cost   | Category |
++---------+---------------------+-------------+--------+----------+
+|     102 | Oracle Complete Ref | Loni        | 550.00 | Database |
+|     103 | Mastering SQL       | Loni        | 250.00 | Database |
+|     104 | PL SQL-Ref          | Scott Urman | 750.00 | Database |
++---------+---------------------+-------------+--------+----------+
+3 rows in set (0.00 sec)

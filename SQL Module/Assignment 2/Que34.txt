@@ -1,0 +1,8 @@
+mysql> drop table issue;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> drop table books;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> drop table member;
+Query OK, 0 rows affected (0.01 sec)

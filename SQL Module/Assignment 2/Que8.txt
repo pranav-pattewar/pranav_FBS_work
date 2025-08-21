@@ -1,0 +1,12 @@
+mysql> rename table issue to lib_issue;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables ;
++-----------------------+
+| Tables_in_assignment2 |
++-----------------------+
+| books                 |
+| lib_issue             |
+| member                |
++-----------------------+
+3 rows in set (0.00 sec)

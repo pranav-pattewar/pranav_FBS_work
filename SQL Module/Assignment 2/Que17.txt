@@ -1,0 +1,18 @@
+mysql> insert into books values
+    -> (101, 'Let us C', 'Denis Ritchie', 450, 'System'),
+    -> (102, 'Oracle Complete Ref', 'Loni', 550, 'Database'),
+    -> (103, 'Mastering SQL', 'Loni', 250, 'Database'),
+    -> (104, 'PL SQL-Ref', 'Scott Urman', 750, 'Database');
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from books;
++---------+---------------------+---------------+--------+----------+
+| book_no | book_name           | author_name   | cost   | Category |
++---------+---------------------+---------------+--------+----------+
+|     101 | Let us C            | Denis Ritchie | 450.00 | System   |
+|     102 | Oracle Complete Ref | Loni          | 550.00 | Database |
+|     103 | Mastering SQL       | Loni          | 250.00 | Database |
+|     104 | PL SQL-Ref          | Scott Urman   | 750.00 | Database |
++---------+---------------------+---------------+--------+----------+
+4 rows in set (0.00 sec)

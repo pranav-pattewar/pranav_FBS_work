@@ -1,0 +1,16 @@
+mysql> UPDATE Issue SET Return_date = DATE_ADD(Issue_Date, INTERVAL 15 DAY) WHERE Lib_Issue_Id IN (7004, 7005);
+Query OK, 2 rows affected (0.01 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> select * from issue;
++--------------+---------+-----------+------------+-------------+
+| Lib_Issue_Id | Book_No | Member_Id | Issue_Date | Return_date |
++--------------+---------+-----------+------------+-------------+
+|         7001 |     101 |         1 | 2006-12-10 | NULL        |
+|         7002 |     102 |         2 | 2006-12-25 | NULL        |
+|         7003 |     104 |         1 | 2006-01-15 | NULL        |
+|         7004 |     101 |         1 | 2006-07-04 | 2006-07-19  |
+|         7005 |     104 |         2 | 2006-11-15 | 2006-11-30  |
+|         7006 |     101 |         3 | 2006-02-18 | NULL        |
++--------------+---------+-----------+------------+-------------+
+6 rows in set (0.00 sec)

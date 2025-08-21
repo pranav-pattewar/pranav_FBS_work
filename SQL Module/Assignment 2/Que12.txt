@@ -1,0 +1,17 @@
+mysql> insert into member values(8,"Pranav Pattewar", "parbhani", "2025-08-20", "lifetime", 5000,110,10);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select* from member;
++-----------+-----------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+| Member_Id | member_name     | Member_address | Acc_Open_Date | Membership_type | Fees_paid | Max_Books_Allowed | Penalty_Amount |
++-----------+-----------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+|         1 | richa sharma    | pune           | 2010-12-05    | lifetime        |     25000 |                 5 |          50.00 |
+|         2 | garima sen      | pune           | 2025-08-20    | annual          |      1000 |                 3 |           NULL |
+|         3 | Amit Verma      | Mumbai         | 2023-04-15    | annual          |      1200 |                 3 |          25.00 |
+|         4 | Sneha Patil     | Nagpur         | 2022-11-10    | lifetime        |     20000 |                 5 |          50.00 |
+|         5 | Rahul Kulkarni  | Pune           | 2024-01-20    | half yearly     |       600 |                 2 |          20.00 |
+|         6 | Priya Mehta     | Aurangabad     | 2025-05-12    | annual          |      1000 |                 3 |           NULL |
+|         7 | Karan Joshi     | Nashik         | 2021-08-05    | lifetime        |     25000 |                 6 |          75.00 |
+|         8 | Pranav Pattewar | parbhani       | 2025-08-20    | lifetime        |      5000 |               110 |          10.00 |
++-----------+-----------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+8 rows in set (0.00 sec)

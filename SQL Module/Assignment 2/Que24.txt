@@ -1,0 +1,9 @@
+mysql> INSERT INTO Issue (Lib_Issue_Id, Book_No, Member_Id, Issue_Date) VALUES
+    -> (7001, 101, 1, '2006-12-10'),
+    -> (7002, 102, 2, '2006-12-25'),
+    -> (7003, 104, 1, '2006-01-15'),
+    -> (7004, 101, 1, '2006-07-04'),
+    -> (7005, 104, 2, '2006-11-15'),
+    -> (7006, 101, 3, '2006-02-18');
+Query OK, 6 rows affected (0.01 sec)
+Records: 6  Duplicates: 0  Warnings: 0

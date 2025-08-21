@@ -1,0 +1,5 @@
+mysql> alter table issue
+    -> add foreign key (member_id)
+    -> references member(member_id);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`assignment2`.`#sql-1900_8`, CONSTRAINT `issue_ibfk_1` FOREIGN KEY (`Member_Id`) REFERENCES `member` (`Member_Id`))
+mysql>

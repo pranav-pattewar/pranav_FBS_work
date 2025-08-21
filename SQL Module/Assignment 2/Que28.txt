@@ -1,0 +1,9 @@
+mysql> delete from issue
+    -> where lib_issue_id = 7007;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> alter table issue
+    -> add foreign key (member_id)
+    -> references member(member_id);
+Query OK, 6 rows affected (0.05 sec)
+Records: 6  Duplicates: 0  Warnings: 0

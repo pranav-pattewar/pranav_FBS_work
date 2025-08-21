@@ -1,0 +1,38 @@
+mysql> desc member;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| member_id         | int          | YES  |     | NULL    |       |
+| member_name       | varchar(30)  | YES  |     | NULL    |       |
+| member_address    | varchar(50)  | YES  |     | NULL    |       |
+| acc_open_date     | date         | YES  |     | NULL    |       |
+| membership_type   | varchar(20)  | YES  |     | NULL    |       |
+| fees_paid         | int          | YES  |     | NULL    |       |
+| max_books_allowed | int          | YES  |     | NULL    |       |
+| penalty_amount    | decimal(7,2) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> desc books;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| book_no     | int          | YES  |     | NULL    |       |
+| book_name   | varchar(30)  | YES  |     | NULL    |       |
+| author_name | varchar(30)  | YES  |     | NULL    |       |
+| cost        | decimal(7,2) | YES  |     | NULL    |       |
+| category    | char(10)     | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> desc issue;
++--------------+------+------+-----+---------+-------+
+| Field        | Type | Null | Key | Default | Extra |
++--------------+------+------+-----+---------+-------+
+| lib_issue_id | int  | YES  |     | NULL    |       |
+| book_no      | int  | YES  |     | NULL    |       |
+| member_id    | int  | YES  |     | NULL    |       |
+| issue_date   | date | YES  |     | NULL    |       |
+| return_date  | date | YES  |     | NULL    |       |
++--------------+------+------+-----+---------+-------+
+5 rows in set (0.00 sec)

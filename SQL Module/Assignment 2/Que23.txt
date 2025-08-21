@@ -1,0 +1,14 @@
+mysql> CREATE TABLE Issue (    Lib_Issue_Id INT PRIMARY KEY,    Book_No INT,    Member_Id INT,    Issue_Date DATE,    Return_date DATE,    FOREIGN KEY (Book_No) REFERENCES Books(Book_No),    FOREIGN KEY (Member_Id) REFERENCES Member(Member_Id));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc issue;
++--------------+------+------+-----+---------+-------+
+| Field        | Type | Null | Key | Default | Extra |
++--------------+------+------+-----+---------+-------+
+| Lib_Issue_Id | int  | NO   | PRI | NULL    |       |
+| Book_No      | int  | YES  | MUL | NULL    |       |
+| Member_Id    | int  | YES  | MUL | NULL    |       |
+| Issue_Date   | date | YES  |     | NULL    |       |
+| Return_date  | date | YES  |     | NULL    |       |
++--------------+------+------+-----+---------+-------+
+5 rows in set (0.00 sec)

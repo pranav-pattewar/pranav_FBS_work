@@ -1,0 +1,14 @@
+mysql> insert into member values(1,"richa sharma", "pune"," 10-12-05", "lifetime",25000,5,50);
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+mysql> insert into member values(2,"garima sen", "pune","2025-08-20", "annual", 1000,3,null);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select* from member;
++-----------+--------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+| Member_Id | member_name  | Member_address | Acc_Open_Date | Membership_type | Fees_paid | Max_Books_Allowed | Penalty_Amount |
++-----------+--------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+|         1 | richa sharma | pune           | 2010-12-05    | lifetime        |     25000 |                 5 |          50.00 |
+|         2 | garima sen   | pune           | 2025-08-20    | annual          |      1000 |                 3 |           NULL |
++-----------+--------------+----------------+---------------+-----------------+-----------+-------------------+----------------+
+2 rows in set (0.01 sec)

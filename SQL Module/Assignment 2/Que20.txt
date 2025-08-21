@@ -1,0 +1,6 @@
+mysql> insert into books values
+    -> (105, 'National Geographic', 'Adis Scott', 1000, 'Science');
+ERROR 3819 (HY000): Check constraint 'book_category_check' is violated. 
+
+reason:
+book category is science which is other than the given constraints 

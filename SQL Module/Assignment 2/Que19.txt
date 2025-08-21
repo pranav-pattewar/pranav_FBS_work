@@ -1,0 +1,11 @@
+mysql> select * from books;
++---------+---------------------+---------------------+--------+----------+
+| book_no | book_name           | author_name         | cost   | Category |
++---------+---------------------+---------------------+--------+----------+
+|     101 | Let us C            | Denis Ritchie       | 450.00 | System   |
+|     102 | Oracle Complete Ref | Loni                | 550.00 | Database |
+|     103 | Mastering SQL       | Loni                | 250.00 | Database |
+|     104 | PL SQL-Ref          | Scott Urman         | 750.00 | Database |
+|     106 | The Great Gatsby    | F. Scott Fitzgerald | 350.00 | Fiction  |
++---------+---------------------+---------------------+--------+----------+
+5 rows in set (0.00 sec)

@@ -1,0 +1,28 @@
+CREATE TABLE Member (
+    ->     Member_Id INT PRIMARY KEY,
+    ->     Member_Name VARCHAR(30),
+    ->     Member_address VARCHAR(50),
+    ->     Acc_Open_Date DATE,
+    ->     Membership_type VARCHAR(20),
+    ->     Fees_paid INT,
+    ->     Max_Books_Allowed INT,
+    ->     Penalty_Amount DECIMAL(7,2),
+    ->     CONSTRAINT member_type_check CHECK (Membership_type IN ('Lifetime', 'Annual', 'Half Yearly', 'Quarterly'))
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+
+mysql> desc member;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| Member_Id         | int          | NO   | PRI | NULL    |       |
+| Member_Name       | varchar(30)  | YES  |     | NULL    |       |
+| Member_address    | varchar(50)  | YES  |     | NULL    |       |
+| Acc_Open_Date     | date         | YES  |     | NULL    |       |
+| Membership_type   | varchar(20)  | YES  |     | NULL    |       |
+| Fees_paid         | int          | YES  |     | NULL    |       |
+| Max_Books_Allowed | int          | YES  |     | NULL    |       |
+| Penalty_Amount    | decimal(7,2) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)

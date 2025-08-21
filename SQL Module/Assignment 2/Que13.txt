@@ -1,0 +1,18 @@
+mysql> CREATE TABLE Member101 AS SELECT * FROM Member;
+Query OK, 8 rows affected (0.02 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+mysql> desc member101;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| Member_Id         | int          | NO   |     | NULL    |       |
+| member_name       | varchar(20)  | YES  |     | NULL    |       |
+| Member_address    | varchar(50)  | YES  |     | NULL    |       |
+| Acc_Open_Date     | date         | YES  |     | NULL    |       |
+| Membership_type   | varchar(20)  | YES  |     | NULL    |       |
+| Fees_paid         | int          | YES  |     | NULL    |       |
+| Max_Books_Allowed | int          | YES  |     | NULL    |       |
+| Penalty_Amount    | decimal(7,2) | YES  |     | NULL    |       |
++-------------------+--------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)

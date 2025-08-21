@@ -1,0 +1,11 @@
+mysql> drop table member;
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> show tables ;
++-----------------------+
+| Tables_in_assignment2 |
++-----------------------+
+| books                 |
+| issue                 |
++-----------------------+
+2 rows in set (0.01 sec)
