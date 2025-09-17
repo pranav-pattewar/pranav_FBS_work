@@ -1,0 +1,80 @@
+🔹 Player Management System – Presentation Points
+🏏 Project Overview
+
+Developed a Player Management System in C.
+
+Manages information of cricket players: Jersey No, Name, Runs, Wickets, Matches.
+
+Supports operations like Add, Remove, Search, Update, Display, Sort, and Top 3.
+
+🔹 Data Structure
+
+Used a struct Player to store player details.
+
+Used a dynamic array of players with malloc/calloc/realloc/free.
+
+This allows memory to grow/shrink as players are added or removed.
+
+🔹 Core Features
+
+Add Player
+
+Takes input using fgets() for names (so names with spaces are allowed).
+
+Expands memory dynamically with realloc().
+
+Remove Player
+
+Deletes a player by jersey number.
+
+Shifts elements to maintain array order.
+
+Shrinks memory with realloc().
+
+Search Player
+
+Search by Jersey Number (exact match).
+
+Search by Name (partial match using strstr()).
+
+Update Player
+
+Update runs, wickets, and matches of any player.
+
+Show All Players
+
+Displays complete list of players.
+
+Shows the total count of players.
+
+Sort Players
+
+Sort by Runs (ascending order).
+
+Sort by Wickets (ascending order).
+
+Sorting is done using simple bubble sort (easy to understand).
+
+Top 3 Players
+
+Top 3 players by Runs (sorted descending).
+
+Top 3 players by Wickets (sorted descending).
+
+🔹 Memory Management
+
+calloc() → Allocate memory initially.
+
+realloc() → Resize memory when players are added/removed.
+
+free() → Release memory at the end.
+
+Added memory allocation checks to handle errors safely.
+
+🔹 Why It’s Good for Learning
+
+Uses structures, strings, loops, functions, and dynamic memory allocation.
+
+Shows understanding of basic algorithms (bubble sort).
+
+Written in a simple, beginner-friendly style that’s easy to explain.
